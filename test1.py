@@ -123,7 +123,7 @@ deal = input("[1]Draw , [2] Check ->")
 
 
 if deal == "2":
-    if scorecom < 6 :
+    if scorecom < 9 :
         y = random.randrange(len(card))
         computer3 = card[y]
         while True:
