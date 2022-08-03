@@ -1,13 +1,14 @@
 row = int(input())
-col = (2*row) - 1
+
 
 n = 1
 m = 1
+k = 2
 
-for i in range(2,col + 1) :
-    while n <= i :
-        while m <= (2*i) - 1:
-            if m >= row - (n-1) and m <= row + (n-1)  :
+while k <= row + 1 :
+    while n <= k :
+        while m <= (2*(row+1)) - 1:
+            if m >= row+1 - (n-1) and m <= row+1 + (n-1)  :
                 print("*", end = "")
             else :
                 print(" ", end ="")
@@ -17,4 +18,10 @@ for i in range(2,col + 1) :
         m = 1
     n = 1
     m = 1
-   
+    k += 1
+
+print(" " * row , end = "")
+print("|")
+print("=" * row , end = "")
+print("V", end = "")
+print("=" * row)
