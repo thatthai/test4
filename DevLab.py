@@ -1,6 +1,3 @@
-from tokenize import Double
-
-
 n = int(input())
 a = n
 sum = 0
